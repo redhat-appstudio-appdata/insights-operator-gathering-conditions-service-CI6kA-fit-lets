@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: insights-operator-gathering-conditions-service
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: insights-operator-gathering-conditions-service
+    app.kubernetes.io/part-of: insights-operator-gathering-conditions-service
+  name: insights-operator-gathering-conditions-service
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app.kubernetes.io/instance: insights-operator-gathering-conditions-service
+status:
+  loadBalancer: {}
