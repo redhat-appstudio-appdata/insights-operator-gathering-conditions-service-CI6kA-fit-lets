@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/part-of: insights-operator-gathering-conditions-service
   name: insights-operator-gathering-conditions-service
 spec:
-  replicas: 1
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
